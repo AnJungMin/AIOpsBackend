@@ -1,21 +1,19 @@
+import app.model.download_weights
+
 from fastapi import FastAPI
-from fastapi.middleware.cors import CORSMiddleware  # 🔥 추가
+from fastapi.middleware.cors import CORSMiddleware
 from app.api.predict import router as predict_router
 
 app = FastAPI()
 
-# 🔥 CORS 설정 추가
+# CORS 설정
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # 또는 ["https://aiopsfrontend.onrender.com"]
+    allow_origins=["*"],  # 배포시 도메인 제한 권장
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
-# predict 라우터를 "/api" 경로 아래에 포함
+# predict 라우터 등록
 app.include_router(predict_router, prefix="/api", tags=["prediction"])
-
-if __name__ == '__main__':
-    import uvicorn
-    uvicorn.run("app.api.main:app", host="0.0.0.0", port=8000, reload=True)
