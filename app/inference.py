@@ -2,7 +2,7 @@ import torch
 from PIL import Image
 from app.model import load_model
 from app.preprocess import preprocess_funcs, disease_names, model_paths
-from app.train.config import DEVICE
+from app.config import DEVICE
 from app.recommendation.utils import get_recommendations_by_disease
 
 def disease_inference_sequential(image, model_paths, preprocess_funcs, disease_names, device):
