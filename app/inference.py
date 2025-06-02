@@ -1,7 +1,7 @@
 import torch
 from PIL import Image
-from .model import load_model  # 위에서 만든 EfficientNet-B3 단일분류기용
-from .preprocess import preprocess_funcs, disease_names, model_paths
+from app.model import load_model  # 절대경로 import로 변경!
+from app.preprocess import preprocess_funcs, disease_names, model_paths
 from app.train.config import DEVICE
 from app.recommendation.utils import get_recommendations_by_disease
 
