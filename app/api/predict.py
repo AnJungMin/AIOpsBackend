@@ -1,4 +1,3 @@
-# app/api/predict.py
 from fastapi import APIRouter, File, UploadFile
 from PIL import Image
 import io
@@ -13,12 +12,12 @@ router = APIRouter()
 async def predict(file: UploadFile = File(...)):
     contents = await file.read()
     image = Image.open(io.BytesIO(contents)).convert("RGB")
-    # 여기서 순차적으로 모델 로딩/추론
+    # 순차적으로 모델 로딩/추론
     preds = disease_inference_sequential(
-        img_pil=image,
-        model_paths=model_paths,
-        preprocess_funcs=preprocess_funcs,
-        disease_names=disease_names,
-        device=DEVICE,
+        image,
+        model_paths,
+        preprocess_funcs,
+        disease_names,
+        DEVICE
     )
     return {"predictions": preds}
