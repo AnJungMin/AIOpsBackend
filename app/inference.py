@@ -1,10 +1,14 @@
+import torch
+from app.api.model import load_model  # ← 반드시 import!
+from app.recommendation.utils import get_recommendations_by_disease
+
 def disease_inference_sequential(image, model_paths, preprocess_funcs, disease_names, device):
-    severity_labels = ["정상", "경증", "중증"]  # ← 클래스 3개
+    severity_labels = ["정상", "경증", "중증"]
     results = []
     raw_preds = []
 
     for path, preprocess, disease in zip(model_paths, preprocess_funcs, disease_names):
-        model = load_model(path, device)  # 반드시 num_classes=3인 구조여야!
+        model = load_model(path, device)
         model.eval()
         tensor = preprocess(image).unsqueeze(0).to(device)
         with torch.no_grad():
@@ -26,14 +30,12 @@ def disease_inference_sequential(image, model_paths, preprocess_funcs, disease_n
             "confidence": f"{confidence:.2f}%"
         }
 
-        # 분기 로직: 클래스 수에 따라 수정!
+        # 결과 분기(3-class 기준)
         if pred_class == 0:
             result["comment"] = "정상 범위입니다. 두피 상태가 양호합니다."
         elif pred_class == 1:
-            # 경증 → 제품 추천
             result["recommendations"] = get_recommendations_by_disease(disease)
         elif pred_class == 2:
-            # 중증 → 병원 추천
             result["hospital_recommendation"] = "주변 피부과를 추천합니다. 위치 정보를 기반으로 제공합니다."
 
         results.append(result)
