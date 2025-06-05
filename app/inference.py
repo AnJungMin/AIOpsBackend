@@ -1,5 +1,5 @@
 import torch
-from app.api.model import load_model  # ← 반드시 import!
+from app.model.model import load_model  # ← 경로 정확히 맞춰서 수정!
 from app.recommendation.utils import get_recommendations_by_disease
 
 def disease_inference_sequential(image, model_paths, preprocess_funcs, disease_names, device):
