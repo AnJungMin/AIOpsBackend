@@ -6,7 +6,8 @@ from app.config import DEVICE
 from app.recommendation.utils import get_recommendations_by_disease
 
 def disease_inference_sequential(image, model_paths, preprocess_funcs, disease_names, device):
-    severity_labels = ["정상", "경증", "중증"]  # num_classes에 맞게 수정!
+    # merge.ipynb 및 pt 기준 num_classes=4 → severity_labels 4개!
+    severity_labels = ["정상", "경증", "중등도", "중증"]
     results = []
     raw_preds = []
 
@@ -22,7 +23,7 @@ def disease_inference_sequential(image, model_paths, preprocess_funcs, disease_n
 
         raw_preds.append(pred_class)
 
-        # 범위 밖 예측값 대비
+        # 예측값 체크
         if 0 <= pred_class < len(severity_labels):
             severity = severity_labels[pred_class]
         else:
@@ -34,14 +35,16 @@ def disease_inference_sequential(image, model_paths, preprocess_funcs, disease_n
             "confidence": f"{confidence:.2f}%"
         }
 
-        # 심각도별 응답 분기
+        # 심각도별 응답 분기 (num_classes=4 기준)
         if pred_class == 0:
             result["comment"] = "정상 범위입니다. 두피 상태가 양호합니다."
-        elif pred_class == 1:
+        elif pred_class == 1 or pred_class == 2:
+            # 경증/중등도는 제품 추천
             result["recommendations"] = get_recommendations_by_disease(disease)
-        elif pred_class == 2:
+        elif pred_class == 3:
+            # 중증은 병원 추천
             result["hospital_recommendation"] = "주변 피부과를 추천합니다. 위치 정보를 기반으로 제공합니다."
-        # 혹시 pred_class==3 등 추가 필요시 elif로 대응
+        # 기타(분류불가 등)는 필요시 elif 추가
 
         results.append(result)
         del model

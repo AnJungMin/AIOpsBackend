@@ -5,28 +5,28 @@ import requests
 
 MODEL_INFOS = [
     (
-        "EfficientNet_B3_BIDDEM_V3.1_2025_05_24_19_model.pt",
-        "https://github.com/AnJungMin/AIOpsBackend/releases/download/v1.0/EfficientNet_B3_BIDDEM_V3.1_2025_05_24_19_model.pt"
+        "biddem_compressed.pt",
+        "https://github.com/AnJungMin/AIOpsBackend/releases/download/v2.0/biddem_compressed.pt"
     ),
     (
-        "EfficientNet_B3_MISE_V4_2025_05_26_18_model.pt",
-        "https://github.com/AnJungMin/AIOpsBackend/releases/download/v1.0/EfficientNet_B3_MISE_V4_2025_05_26_18_model.pt"
+        "mise_compressed.pt",
+        "https://github.com/AnJungMin/AIOpsBackend/releases/download/v2.0/mise_compressed.pt"
     ),
     (
-        "EfficientNet_B3_MONO_V4_2025_05_27_16_model.pt",
-        "https://github.com/AnJungMin/AIOpsBackend/releases/download/v1.0/EfficientNet_B3_MONO_V4_2025_05_27_16_model.pt"
+        "mono_compressed.pt",
+        "https://github.com/AnJungMin/AIOpsBackend/releases/download/v2.0/mono_compressed.pt"
     ),
     (
-        "EfficientNet_B3_MOSA_V5_TUNNING_2025_06_01_23_final_model.pt",
-        "https://github.com/AnJungMin/AIOpsBackend/releases/download/v1.0/EfficientNet_B3_MOSA_V5_TUNNING_2025_06_01_23_final_model.pt"
+        "mosa_compressed.pt",
+        "https://github.com/AnJungMin/AIOpsBackend/releases/download/v2.0/mosa_compressed.pt"
     ),
     (
-        "EfficientNet_B3_PIZI_V4_2025_05_27_17_model.pt",
-        "https://github.com/AnJungMin/AIOpsBackend/releases/download/v1.0/EfficientNet_B3_PIZI_V4_2025_05_27_17_model.pt"
+        "pizi_compressed.pt",
+        "https://github.com/AnJungMin/AIOpsBackend/releases/download/v2.0/pizi_compressed.pt"
     ),
     (
-        "EfficientNet_B3_TALMO_V5_TUNNING_2025_06_01_16_model.pt",
-        "https://github.com/AnJungMin/AIOpsBackend/releases/download/v1.0/EfficientNet_B3_TALMO_V5_TUNNING_2025_06_01_16_model.pt"
+        "talmo_compressed.pt",
+        "https://github.com/AnJungMin/AIOpsBackend/releases/download/v2.0/talmo_compressed.pt"
     ),
 ]
 

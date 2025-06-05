@@ -1,122 +1,392 @@
 {
-    "미세각질": [
-        {
-            "recommended_product_index": 1118,
-            "product_name": "포뷰트 웨트 폴리쉬 오일 160ml",
-            "category": "헤어에센스",
-            "similarity": 0.8691589832305908
-        },
-        {
-            "recommended_product_index": 1214,
-            "product_name": "[초고농축 영양케어] 쿤달 울트라 헤어세럼 100ml 4종 택 1",
-            "category": "헤어에센스",
-            "similarity": 0.8472802639007568
-        },
-        {
-            "recommended_product_index": 1350,
-            "product_name": "어네이즈 결 에센스 100ml",
-            "category": "헤어에센스",
-            "similarity": 0.8357329368591309
-        }
-    ],
-    "피지과다": [
-        {
-            "recommended_product_index": 513,
-            "product_name": "[1+1]스웨거 헤어 디펜더 안티헤어로스 샴푸 490ml 더블 기획",
-            "category": "샴푸/린스",
-            "similarity": 0.7892295122146606
-        },
-        {
-            "recommended_product_index": 978,
-            "product_name": "커리쉴 리바이탈라이징 트리트먼트 250ml",
-            "category": "트리트먼트/팩",
-            "similarity": 0.7766515612602234
-        },
-        {
-            "recommended_product_index": 622,
-            "product_name": "[대용량/스케일링]닥터방기원 샴푸 바이오틴 탈모케어 [모근 강화]",
-            "category": "샴푸/린스",
-            "similarity": 0.768718421459198
-        }
-    ],
-    "모낭사이홍반": [
-        {
-            "recommended_product_index": 1228,
-            "product_name": "달리프 글램 트루에센스 오리지널 더블 기획 (100ml+100ml)",
-            "category": "헤어에센스",
-            "similarity": 0.8142847418785095
-        },
-        {
-            "recommended_product_index": 1122,
-            "product_name": "커리쉴 실키 오일 세럼 70ml",
-            "category": "헤어에센스",
-            "similarity": 0.7902581095695496
-        },
-        {
-            "recommended_product_index": 1268,
-            "product_name": "보타믹스 위드우드 밸런싱 비건 헤어오일 100ml",
-            "category": "헤어에센스",
-            "similarity": 0.7712874412536621
-        }
-    ],
-    "모낭홍반/농포": [
-        {
-            "recommended_product_index": 434,
-            "product_name": "바이아우어 블랙비어 81% 샴푸 510ml",
-            "category": "샴푸/린스",
-            "similarity": 0.8578053116798401
-        },
-        {
-            "recommended_product_index": 1135,
-            "product_name": "향기주는 워터에센스 비누향252ml",
-            "category": "헤어에센스",
-            "similarity": 0.835209846496582
-        },
-        {
-            "recommended_product_index": 978,
-            "product_name": "커리쉴 리바이탈라이징 트리트먼트 250ml",
-            "category": "트리트먼트/팩",
-            "similarity": 0.8348090648651123
-        }
-    ],
-    "비듬": [
-        {
-            "recommended_product_index": 1195,
-            "product_name": "네이처리퍼블릭 블랙빈 탈모증상 개선 두피 토닉 120ml",
-            "category": "헤어에센스",
-            "similarity": 0.851381778717041
-        },
-        {
-            "recommended_product_index": 1235,
-            "product_name": "[모근영양 헤어토닉] 아로마티카 로즈마리 루트 인핸서 100ml (단품/리필)",
-            "category": "헤어에센스",
-            "similarity": 0.818320095539093
-        },
-        {
-            "recommended_product_index": 54,
-            "product_name": "제로시피 나노그래핀 샴푸 500ml",
-            "category": "샴푸/린스",
-            "similarity": 0.8166443705558777
-        }
-    ],
-    "탈모": [
-        {
-            "recommended_product_index": 145,
-            "product_name": "케라시스 단백질 컨디셔너980ML 4종 택1",
-            "category": "샴푸/린스",
-            "similarity": 0.8954883813858032
-        },
-        {
-            "recommended_product_index": 765,
-            "product_name": "[NEW] 트리셀 트리플 본딩 트리트먼트 250ml",
-            "category": "트리트먼트/팩",
-            "similarity": 0.8935701847076416
-        },
-        {
-            "recommended_product_index": 896,
-            "product_name": "[NEW] 실크테라피 샤인 볼륨 리프트 트리트먼트 500ml (2종택1)",
-            "category": "트리트먼트/팩",
-            "similarity": 0.8921428322792053
-        }
-    ]
+  "미세각질": [
+    {
+      "product_index": 688,
+      "product_name": "포레스트스토리 슈퍼하드 워터스프레이 100ml",
+      "category": "헤어에센스",
+      "similarity": 0.4431829410791916,
+      "weighted_score": 34439.96794273452,
+      "top_tokens": [
+        "판테놀",
+        "하이드롤라이즈드케라틴",
+        "글리세린",
+        "부틸페닐메틸프로피오날",
+        "젤라틴"
+      ],
+      "token_presence": {
+        "판테놀": true,
+        "하이드롤라이즈드케라틴": true,
+        "글리세린": false,
+        "부틸페닐메틸프로피오날": false,
+        "젤라틴": false
+      }
+    },
+    {
+      "product_index": 114,
+      "product_name": "달리프 릴렉싱 샴푸 500ml(탈모증상완화/두피강화/약산성샴푸)",
+      "category": "샴푸/린스",
+      "similarity": 0.4044560811976118,
+      "weighted_score": 23834.83953862398,
+      "top_tokens": [
+        "판테놀",
+        "살리실릭애씨드",
+        "나이아신아마이드",
+        "하이드롤라이즈드케라틴",
+        "소듐코코일알라니네이트"
+      ],
+      "token_presence": {
+        "판테놀": true,
+        "살리실릭애씨드": true,
+        "나이아신아마이드": false,
+        "하이드롤라이즈드케라틴": true,
+        "소듐코코일알라니네이트": false
+      }
+    },
+    {
+      "product_index": 132,
+      "product_name": "달리프 릴렉싱 샴푸 더블기획 (500ml+500ml)(탈모증상완화)",
+      "category": "샴푸/린스",
+      "similarity": 0.4044560811976118,
+      "weighted_score": 22763.192705882786,
+      "top_tokens": [
+        "판테놀",
+        "살리실릭애씨드",
+        "나이아신아마이드",
+        "하이드롤라이즈드케라틴",
+        "소듐코코일알라니네이트"
+      ],
+      "token_presence": {
+        "판테놀": true,
+        "살리실릭애씨드": true,
+        "나이아신아마이드": false,
+        "하이드롤라이즈드케라틴": true,
+        "소듐코코일알라니네이트": false
+      }
+    }
+  ],
+  "피지과다": [
+    {
+      "product_index": 114,
+      "product_name": "달리프 릴렉싱 샴푸 500ml(탈모증상완화/두피강화/약산성샴푸)",
+      "category": "샴푸/린스",
+      "similarity": 0.5212195252673556,
+      "weighted_score": 30715.779355720424,
+      "top_tokens": [
+        "살리실릭애씨드",
+        "나이아신아마이드",
+        "녹차추출물",
+        "피토스테롤",
+        "소듐코코일알라니네이트"
+      ],
+      "token_presence": {
+        "살리실릭애씨드": true,
+        "나이아신아마이드": true,
+        "녹차추출물": true,
+        "피토스테롤": false,
+        "소듐코코일알라니네이트": false
+      }
+    },
+    {
+      "product_index": 132,
+      "product_name": "달리프 릴렉싱 샴푸 더블기획 (500ml+500ml)(탈모증상완화)",
+      "category": "샴푸/린스",
+      "similarity": 0.5212195252673556,
+      "weighted_score": 29334.75610157204,
+      "top_tokens": [
+        "살리실릭애씨드",
+        "나이아신아마이드",
+        "녹차추출물",
+        "피토스테롤",
+        "소듐코코일알라니네이트"
+      ],
+      "token_presence": {
+        "살리실릭애씨드": true,
+        "나이아신아마이드": true,
+        "녹차추출물": true,
+        "피토스테롤": false,
+        "소듐코코일알라니네이트": false
+      }
+    },
+    {
+      "product_index": 133,
+      "product_name": "[대용량/탈모증상완화] 달리프 릴렉싱 샴푸 1000ml",
+      "category": "샴푸/린스",
+      "similarity": 0.4686036369875099,
+      "weighted_score": 27615.09348985615,
+      "top_tokens": [
+        "살리실릭애씨드",
+        "나이아신아마이드",
+        "녹차추출물",
+        "피토스테롤",
+        "동백나무꽃추출물"
+      ],
+      "token_presence": {
+        "살리실릭애씨드": true,
+        "나이아신아마이드": true,
+        "녹차추출물": true,
+        "피토스테롤": false,
+        "동백나무꽃추출물": false
+      }
+    }
+  ],
+  "모낭사이홍반": [
+    {
+      "product_index": 638,
+      "product_name": "[기은세 유튜브 두피앰플/화해1위] 솔랩 탈모/진정 두피앰플+샴푸증정기획",
+      "category": "헤어에센스",
+      "similarity": 0.556789209514262,
+      "weighted_score": 39451.299440133036,
+      "top_tokens": [
+        "판테놀",
+        "알란토인",
+        "녹차추출물",
+        "멘톨",
+        "로즈마리잎오일"
+      ],
+      "token_presence": {
+        "판테놀": true,
+        "알란토인": true,
+        "녹차추출물": true,
+        "멘톨": false,
+        "로즈마리잎오일": false
+      }
+    },
+    {
+      "product_index": 114,
+      "product_name": "달리프 릴렉싱 샴푸 500ml(탈모증상완화/두피강화/약산성샴푸)",
+      "category": "샴푸/린스",
+      "similarity": 0.6658438264409122,
+      "weighted_score": 39238.576198458824,
+      "top_tokens": [
+        "판테놀",
+        "나이아신아마이드",
+        "녹차추출물",
+        "지황뿌리추출물",
+        "살리실릭애씨드"
+      ],
+      "token_presence": {
+        "판테놀": true,
+        "나이아신아마이드": true,
+        "녹차추출물": true,
+        "지황뿌리추출물": false,
+        "살리실릭애씨드": false
+      }
+    },
+    {
+      "product_index": 132,
+      "product_name": "달리프 릴렉싱 샴푸 더블기획 (500ml+500ml)(탈모증상완화)",
+      "category": "샴푸/린스",
+      "similarity": 0.6658438264409122,
+      "weighted_score": 37474.35639592098,
+      "top_tokens": [
+        "판테놀",
+        "나이아신아마이드",
+        "녹차추출물",
+        "지황뿌리추출물",
+        "살리실릭애씨드"
+      ],
+      "token_presence": {
+        "판테놀": true,
+        "나이아신아마이드": true,
+        "녹차추출물": true,
+        "지황뿌리추출물": false,
+        "살리실릭애씨드": false
+      }
+    }
+  ],
+  "모낭홍반/농포": [
+    {
+      "product_index": 315,
+      "product_name": "닥터포헤어 폴리젠 두피케어 탈모증상완화 샴푸 대용량 750 기획",
+      "category": "샴푸/린스",
+      "similarity": 0.40597570114895326,
+      "weighted_score": 26915.458229913533,
+      "top_tokens": [
+        "나이아신아마이드",
+        "살리실릭애씨드",
+        "아데노신",
+        "시트릭애씨드",
+        "폴리솔베이트80"
+      ],
+      "token_presence": {
+        "나이아신아마이드": true,
+        "살리실릭애씨드": true,
+        "아데노신": false,
+        "시트릭애씨드": false,
+        "폴리솔베이트80": false
+      }
+    },
+    {
+      "product_index": 133,
+      "product_name": "[대용량/탈모증상완화] 달리프 릴렉싱 샴푸 1000ml",
+      "category": "샴푸/린스",
+      "similarity": 0.4331706837898535,
+      "weighted_score": 25527.008298146342,
+      "top_tokens": [
+        "나이아신아마이드",
+        "살리실릭애씨드",
+        "시트릭애씨드",
+        "피피지-3미리스틸에터",
+        "라우릴베타인"
+      ],
+      "token_presence": {
+        "나이아신아마이드": true,
+        "살리실릭애씨드": true,
+        "시트릭애씨드": false,
+        "피피지-3미리스틸에터": false,
+        "라우릴베타인": true
+      }
+    },
+    {
+      "product_index": 439,
+      "product_name": "닥터포헤어 두피집중케어 솔루션 2종 기획세트(스케일러300ml+스칼프팩250ml)",
+      "category": "샴푸/린스",
+      "similarity": 0.5128379130241594,
+      "weighted_score": 24583.039212186988,
+      "top_tokens": [
+        "나이아신아마이드",
+        "살리실릭애씨드",
+        "티트리잎오일",
+        "아데노신",
+        "카페인"
+      ],
+      "token_presence": {
+        "나이아신아마이드": true,
+        "살리실릭애씨드": true,
+        "티트리잎오일": true,
+        "아데노신": false,
+        "카페인": false
+      }
+    }
+  ],
+  "비듬": [
+    {
+      "product_index": 438,
+      "product_name": "닥터포헤어 헤리티지 샴푸(얼그레이블리스) & 트리트먼트(스위트딜라이트) 880ML 단독 기획세트",
+      "category": "샴푸/린스",
+      "similarity": 0.5730191444656789,
+      "weighted_score": 37127.4575216214,
+      "top_tokens": [
+        "나이아신아마이드",
+        "살리실릭애씨드",
+        "바이오틴",
+        "덱스판테놀",
+        "올레익/리놀레익/리놀레닉폴리글리세라이즈"
+      ],
+      "token_presence": {
+        "나이아신아마이드": true,
+        "살리실릭애씨드": true,
+        "바이오틴": true,
+        "덱스판테놀": true,
+        "올레익/리놀레익/리놀레닉폴리글리세라이즈": false
+      }
+    },
+    {
+      "product_index": 9,
+      "product_name": "[3월 올영픽 / 대용량샴푸] 닥터포헤어 두피 강화 헤리티지샴푸 750ml + 트리트먼트140ml 증정기획",
+      "category": "샴푸/린스",
+      "similarity": 0.664651883584815,
+      "weighted_score": 37036.26397861993,
+      "top_tokens": [
+        "나이아신아마이드",
+        "살리실릭애씨드",
+        "바이오틴",
+        "덱스판테놀",
+        "스타이렌/아크릴레이트코폴리머"
+      ],
+      "token_presence": {
+        "나이아신아마이드": true,
+        "살리실릭애씨드": true,
+        "바이오틴": true,
+        "덱스판테놀": true,
+        "스타이렌/아크릴레이트코폴리머": false
+      }
+    },
+    {
+      "product_index": 84,
+      "product_name": "닥터포헤어 헤리티지 샴푸 300ml 기획세트/750ml 단품(NEW 두피안티에이징 탈모샴푸)",
+      "category": "샴푸/린스",
+      "similarity": 0.664651883584815,
+      "weighted_score": 36290.45810004941,
+      "top_tokens": [
+        "나이아신아마이드",
+        "살리실릭애씨드",
+        "바이오틴",
+        "덱스판테놀",
+        "스타이렌/아크릴레이트코폴리머"
+      ],
+      "token_presence": {
+        "나이아신아마이드": true,
+        "살리실릭애씨드": true,
+        "바이오틴": true,
+        "덱스판테놀": true,
+        "스타이렌/아크릴레이트코폴리머": false
+      }
+    }
+  ],
+  "탈모": [
+    {
+      "product_index": 438,
+      "product_name": "닥터포헤어 헤리티지 샴푸(얼그레이블리스) & 트리트먼트(스위트딜라이트) 880ML 단독 기획세트",
+      "category": "샴푸/린스",
+      "similarity": 0.6628184800350331,
+      "weighted_score": 42945.79893136589,
+      "top_tokens": [
+        "나이아신아마이드",
+        "바이오틴",
+        "살리실릭애씨드",
+        "덱스판테놀",
+        "스타이렌/아크릴레이트코폴리머"
+      ],
+      "token_presence": {
+        "나이아신아마이드": true,
+        "바이오틴": true,
+        "살리실릭애씨드": true,
+        "덱스판테놀": true,
+        "스타이렌/아크릴레이트코폴리머": false
+      }
+    },
+    {
+      "product_index": 9,
+      "product_name": "[3월 올영픽 / 대용량샴푸] 닥터포헤어 두피 강화 헤리티지샴푸 750ml + 트리트먼트140ml 증정기획",
+      "category": "샴푸/린스",
+      "similarity": 0.7528471877591919,
+      "weighted_score": 41950.7532740679,
+      "top_tokens": [
+        "나이아신아마이드",
+        "바이오틴",
+        "살리실릭애씨드",
+        "덱스판테놀",
+        "스타이렌/아크릴레이트코폴리머"
+      ],
+      "token_presence": {
+        "나이아신아마이드": true,
+        "바이오틴": true,
+        "살리실릭애씨드": true,
+        "덱스판테놀": true,
+        "스타이렌/아크릴레이트코폴리머": false
+      }
+    },
+    {
+      "product_index": 84,
+      "product_name": "닥터포헤어 헤리티지 샴푸 300ml 기획세트/750ml 단품(NEW 두피안티에이징 탈모샴푸)",
+      "category": "샴푸/린스",
+      "similarity": 0.7528471877591919,
+      "weighted_score": 41105.98344468331,
+      "top_tokens": [
+        "나이아신아마이드",
+        "바이오틴",
+        "살리실릭애씨드",
+        "덱스판테놀",
+        "스타이렌/아크릴레이트코폴리머"
+      ],
+      "token_presence": {
+        "나이아신아마이드": true,
+        "바이오틴": true,
+        "살리실릭애씨드": true,
+        "덱스판테놀": true,
+        "스타이렌/아크릴레이트코폴리머": false
+      }
+    }
+  ]
 }

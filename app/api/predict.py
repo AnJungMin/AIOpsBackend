@@ -15,9 +15,9 @@ async def predict(file: UploadFile = File(...)):
     # 순차적으로 모델 로딩/추론
     preds = disease_inference_sequential(
         image,
-        model_paths,
-        preprocess_funcs,
-        disease_names,
+        model_paths,        # v2.0용 pt파일 이름과 경로가 맞아야 함!
+        preprocess_funcs,   # 380x380, mean/std 확인!
+        disease_names,      # 질환 순서 일치 확인!
         DEVICE
     )
     return {"predictions": preds}
