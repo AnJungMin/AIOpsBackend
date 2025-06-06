@@ -9,7 +9,9 @@ app = FastAPI()
 # CORS 설정
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # 배포시 도메인 제한 권장
+    allow_origins=[
+        "https://aiopsfrontend.onrender.com",  # 실제 프론트엔드 도메인
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
