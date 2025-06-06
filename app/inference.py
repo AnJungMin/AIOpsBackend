@@ -1,11 +1,37 @@
+# app/inference.py
+
+import torch
+from app.model.model import load_model  # 모델 로드 함수 (반드시 num_classes=3으로 되어 있어야 함)
+from app.recommendation.utils import get_recommendations_by_disease  # 제품/병원 추천 함수 등
+
+# ─────────────────────────────────────────────
+# 1. 모델 캐시 (서버 기동 시 1회만 로드)
+MODEL_CACHE = {}
+
+def preload_models(model_paths, device):
+    """
+    model_paths 리스트와 device를 받아, 모델을 미리 모두 로딩해 딕셔너리에 저장.
+    한 번만 실행되며, 이미 캐시에 있으면 재로딩하지 않음.
+    """
+    global MODEL_CACHE
+    if not MODEL_CACHE:
+        for idx, path in enumerate(model_paths):
+            model = load_model(path, device)
+            model.eval()
+            MODEL_CACHE[idx] = model
+    return MODEL_CACHE
+
+# ─────────────────────────────────────────────
+# 2. 메인 추론 함수
 def disease_inference_sequential(image, model_paths, preprocess_funcs, disease_names, device):
     """
     입력 이미지를 각 질환별 모델에 순차적으로 추론하여 결과 반환.
     """
-    severity_labels = ["정상", "경증", "중증"]   # ← 3개로 수정!
+    severity_labels = ["정상", "경증", "중증"]   # ← 3개로 맞춤
     results = []
     raw_preds = []
 
+    # 모델 캐싱 및 사전 로드
     models = preload_models(model_paths, device)
 
     for idx, (preprocess, disease) in enumerate(zip(preprocess_funcs, disease_names)):
