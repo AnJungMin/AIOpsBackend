@@ -13,16 +13,16 @@ MODEL_INFOS = [
         "https://github.com/AnJungMin/AIOpsBackend/releases/download/v3.0/mise_B0_compressed.pt"
     ),
     (
-        "mono_B0_compressed.pt",
-        "https://github.com/AnJungMin/AIOpsBackend/releases/download/v3.0/mono_B0_compressed.pt"
+        "mono_compressed.pt",
+        "https://github.com/AnJungMin/AIOpsBackend/releases/download/v2.0/mono_compressed.pt"
     ),
     (
         "mosa_B0_compressed.pt",
         "https://github.com/AnJungMin/AIOpsBackend/releases/download/v3.0/mosa_B0_compressed.pt"
     ),
     (
-        "pizi_B0_compressed.pt",
-        "https://github.com/AnJungMin/AIOpsBackend/releases/download/v3.0/pizi_B0_compressed.pt"
+        "pizi_compressed.pt",
+        "https://github.com/AnJungMin/AIOpsBackend/releases/download/v2.0/pizi_compressed.pt"
     ),
     (
         "talmo_B0_compressed.pt",
