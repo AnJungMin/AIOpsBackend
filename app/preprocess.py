@@ -14,7 +14,7 @@ model_paths = [
     "app/model_weight/mise_B0_compressed.pt",     # 미세각질(B0)
     "app/model_weight/mono_compressed.pt",        # 모낭홍반/농포(B3)
     "app/model_weight/mosa_B0_compressed.pt",     # 모낭사이홍반(B0)
-    "app/model_weight/pizi_compressed.pt",        # 피지과다(B3)
+    "app/model_weight/pizi_B0_compressed.pt",        # 피지과다(B3)
     "app/model_weight/talmo_B0_compressed.pt"     # 탈모(B0)
 ]
 

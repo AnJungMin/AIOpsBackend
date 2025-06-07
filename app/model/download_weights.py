@@ -22,7 +22,7 @@ MODEL_INFOS = [
     ),
     (
         "pizi_compressed.pt",
-        "https://github.com/AnJungMin/AIOpsBackend/releases/download/v2.0/pizi_compressed.pt"
+        "https://github.com/AnJungMin/AIOpsBackend/releases/download/v3.0/pizi_B0_compressed.pt"
     ),
     (
         "talmo_B0_compressed.pt",
