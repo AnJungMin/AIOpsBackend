@@ -27,8 +27,8 @@ async def predict(file: UploadFile = File(...)):
         with torch.no_grad():
             preds = disease_inference_sequential(
                 image,
-                model_paths,      # 모델 경로 리스트
-                preprocess_funcs, # 전처리 리스트
+                model_paths,      # 모델 경로 리스트 (B0 전용)
+                preprocess_funcs, # 전처리 리스트 (B0 전용)
                 disease_names,    # 질환명 리스트
                 DEVICE
             )
